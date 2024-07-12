@@ -9,6 +9,8 @@ public class ProjForXpath {
 	     System.setProperty("webdriver.chrome.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\chromedriver.exe");
 	     driver=new ChromeDriver();
 	     driver.get("https://www.facebook.com");
+	     String title=driver.getCurrentUrl();
+	     System.out.println(title);
 	     
 	}
 
