@@ -7,7 +7,7 @@ public class DemoClass {
 
 	public static void main(String[] args) {
 		//Setup chromedriver
-		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\chromedriver.exe");
 		//object created for chromedriver class and assign object to object referance of webdriver
 		//WebDriver is an interface in selenium )
           WebDriver driver=new ChromeDriver();

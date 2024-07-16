@@ -8,7 +8,7 @@ public class Testprog1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         WebDriver driver=null;
-		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\chromedriver.exe");
         driver=new ChromeDriver();
         driver.navigate().to("https://www.facebook.com");
         

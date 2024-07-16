@@ -14,19 +14,19 @@ public class DiffBrowser {
 		String browser=sc.nextLine();
 		WebDriver driver=null;
 		
-		if(browser.equals("Chrome"))
+		if(browser.equalsIgnoreCase("Chrome"))
 		   {
-			System.setProperty("webdriver.chrome.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		   }
-			else if(browser.equals("Firefox"))
+			else if(browser.equalsIgnoreCase("Firefox"))
 			{
-				System.setProperty("webdriver.gecko.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\geckodriver.exe");
 				driver=new FirefoxDriver();
 			}
-			else if(browser.equals("Edge"))
+			else if(browser.equalsIgnoreCase("Edge"))
 			{
-				System.setProperty("webdriver.edge.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\msedgedriver.exe");
+				System.setProperty("webdriver.edge.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\msedgedriver.exe");
 				driver=new EdgeDriver();
 			}
 		driver.get("https://www.facebook.com");

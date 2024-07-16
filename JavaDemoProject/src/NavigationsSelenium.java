@@ -6,7 +6,7 @@ public class NavigationsSelenium {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
      WebDriver driver=null;
-     System.setProperty("webdriver.chrome.driver", "C:\\SeleniumTraining\\JavaDemoProject\\Drivers\\chromedriver.exe");
+     System.setProperty("webdriver.chrome.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\chromedriver.exe");
      driver=new ChromeDriver();
      driver.manage().window().maximize();
      driver.get("https://www.google.com");
