@@ -13,5 +13,10 @@
 	<classpathentry kind="lib" path="Library/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="Library/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="Library/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="Library/commons-io-2.16.1.jar"/>
+	<classpathentry kind="lib" path="Library/commons-io-2.16.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="Library/commons-io-2.16.1-sources.jar"/>
+	<classpathentry kind="lib" path="Library/commons-io-2.16.1-tests.jar"/>
+	<classpathentry kind="lib" path="Library/commons-io-2.16.1-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,6 +1,7 @@
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,9 +13,9 @@ public class ActionMechanism {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Santosh\\git\\SeleniumAutomation\\JavaDemoProject\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		//driver.get("http://omayo.blogspot.com");
+		driver.get("http://omayo.blogspot.com");
 		//driver.get("http://omayo.blogspot.com/p/page3.html");  //For drag and drop By
-		driver.get("http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html"); //For Drag and Drop 
+		//driver.get("http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html"); //For Drag and Drop 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Actions action=new Actions(driver);
@@ -50,6 +51,16 @@ public class ActionMechanism {
 		WebElement destelement=driver.findElement(By.id("box103"));
 		action.dragAndDrop(sourcelement, destelement).perform();
 		*/
-	}
+		//WebElement comendivlink=driver.findElement(By.linkText("compendiumdev"));
+		//action.keyDown(Keys.CONTROL).click(comendivlink).keyUp(Keys.CONTROL).perform();
+		
+		driver.findElement(By.name("userid")).sendKeys("Arati");
+		action.sendKeys(Keys.TAB).perform();
+		WebElement password=driver.findElement(By.name("pswrd"));
+        password.sendKeys("walunj");
+        action.sendKeys(Keys.TAB).sendKeys(Keys.ENTER).build().perform();
+        //action.sendKeys(args).sendKeys(Keys.chord(Keys.CONTROL,z)).perform();
+       	
+}
 
 }
