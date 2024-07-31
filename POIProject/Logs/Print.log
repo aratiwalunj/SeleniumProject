@@ -1,0 +1,8 @@
+19:32:05.869 [main] DEBUG poi.POIProject.LogBylog4j - Test Execution Started
+19:32:11.406 [main] DEBUG poi.POIProject.LogBylog4j - Chrome Browser got launched
+19:32:26.302 [main] DEBUG poi.POIProject.LogBylog4j - Omayo Application got opened
+19:32:26.359 [main] DEBUG poi.POIProject.LogBylog4j - Browser got maximized
+19:32:30.015 [main] DEBUG poi.POIProject.LogBylog4j - Compendiumdev link got clicked
+19:32:35.060 [main] DEBUG poi.POIProject.LogBylog4j - Browser navigated back to Omayo website
+19:32:35.221 [main] DEBUG poi.POIProject.LogBylog4j - Browser navigated forward to Compendiumdev page
+19:32:35.241 [main] ERROR poi.POIProject.LogBylog4j - Error: We are in wrong page
